@@ -11,7 +11,7 @@ frame.place(relx=0.3, rely=0.1, relwidth=0.8, relheight=0.8)
 
 # Create the table
 def create():
-    conn = psycopg2.connect(dbname="postgres", user="postgres", password="Abcd1234!@#$", host = "localhost", port="5432" )
+    conn = psycopg2.connect(dbname="postgres", user="xxxxxxxx", password="xxxxxxxx", host = "localhost", port="5432" )
     cur = conn.cursor()
     cur.execute('''CREATE TABLE STUDENT(ID SERIAL, NAME TEXT, AGE TEXT, ADDRESS TEXT);''')
     print("Table Created!")
